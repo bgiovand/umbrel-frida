@@ -10,6 +10,8 @@ services:
       - UID=1000
       - GID=1000
     volumes:
+      - /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket
+      - ./avahi-daemon:/etc/init.d/avahi-daemon
       - ${APP_DATA_DIR}/data/owntone:/etc/owntone
       - ${APP_DATA_DIR}/data/media:/srv/media
       - ${APP_DATA_DIR}/data/cache:/var/cache/owntone
