@@ -1,6 +1,6 @@
 manifestVersion: 1
 id: frida-owntone
-name: OwnTone Server
+name: OwnTone
 tagline: "A free, open-source, and self-hosted music streaming server."
 icon: https://owntone.github.io/owntone-server/assets/logo.svg
 category: Media
