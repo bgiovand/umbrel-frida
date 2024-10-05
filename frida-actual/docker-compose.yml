@@ -9,11 +9,11 @@ services:
 
   actual-server:
     image: docker.io/actualbudget/actual-server:latest
+    container_name: actual
+    network_mode: bridge
     user: "1000:1000"
     ports:
       - "5006:5006"
-    environment:
-      - ACTUAL_PORT=5006
     volumes:
       - ${APP_DATA_DIR}/data:/data
     restart: unless-stopped
