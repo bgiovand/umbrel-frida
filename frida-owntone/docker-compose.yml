@@ -1,11 +1,11 @@
 version: "3.7"
 
 services:
-  app_proxy:
-    environment:
-      # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: frida-owntone_owntone_1
-      APP_PORT: 3689
+  # app_proxy:
+  #   environment:
+  #     The format here is: <app-id>_<docker-service-name>_1
+  #     APP_HOST: frida-owntone_owntone_1
+  #     APP_PORT: 3689
 
   owntone:
     image: docker.io/owntone/owntone:latest
