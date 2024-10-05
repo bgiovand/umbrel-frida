@@ -9,4 +9,8 @@ services:
     environment:
       - UID=1000
       - GID=1000
+    volumes:
+      - ${APP_DATA_DIR}/data/owntone:/etc/owntone
+      - ${APP_DATA_DIR}/data/media:/srv/media
+      - ${APP_DATA_DIR}/data/cache:/var/cache/owntone
     restart: unless-stopped
