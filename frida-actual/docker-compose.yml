@@ -1,9 +1,15 @@
 version: "3.7"
 
 services:
+  app_proxy:
+    environment:
+      APP_HOST: frida-actual_server_1
+      APP_PORT: 5006
+      PROXY_AUTH_ADD: "false"
 
-  actual_server:
+  server:
     image: docker.io/actualbudget/actual-server:latest
+    container_name: actual
     ports:
       - '5006:5006'
     environment:
