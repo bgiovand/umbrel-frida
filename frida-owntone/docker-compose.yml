@@ -16,10 +16,10 @@ services:
       - UID=1000
       - GID=1000
     volumes:
-      - ${APP_DATA_DIR}/owntone:/etc/owntone
-      - ${APP_DATA_DIR}/owntone/db:/var/cache/owntone/
-      - ${APP_DATA_DIR}/owntone/media:/srv/media
-      - /sys/fs/cgroup:/sys/fs/cgroup
+      - ${APP_DATA_DIR}/data:/etc/owntone
+      - ${APP_DATA_DIR}/data/db:/var/cache/owntone/
+      - ${APP_DATA_DIR}/data/media:/srv/media
+      # - /sys/fs/cgroup:/sys/fs/cgroup
     ports:
       - 3689:3689
       - 3688:3688
