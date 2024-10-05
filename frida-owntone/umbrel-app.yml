@@ -1,26 +1,26 @@
 manifestVersion: 1
 id: frida-owntone
-name: OwnTone
+name: OwnTone Server
 tagline: "A free, open-source, and self-hosted music streaming server."
-icon: https://svgur.com/i/mvA.svg
+icon: https://owntone.github.io/owntone-server/assets/logo.svg
 category: Media
 version: "1.0.0"
-port: 4000
+port: 3689
 description: >-
   OwnTone is a free, open-source, and self-hosted music streaming server. It allows you to stream your music collection to any device with a web browser. OwnTone is designed to be simple to use and easy to set up. It supports a wide range of audio formats, including MP3, FLAC, and OGG. OwnTone is perfect for anyone who wants to listen to their music collection on the go or share it with friends and family.
 
-developer: Umbrel
+developer: OwnTone
 website: https://umbrel.com
-submitter: Umbrel
-submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
-support: https://github.com/getumbrel/umbrel-hello-world-app/issues
+submitter: Bruce
+submission: 
+repo: https://github.com/owntone/owntone-server
+support: 
 gallery:
   - https://i.imgur.com/yyVG0Jb.jpeg
   - https://i.imgur.com/yyVG0Jb.jpeg
   - https://i.imgur.com/yyVG0Jb.jpeg
 releaseNotes: >-
-  Add what's new in the latest version of your app here.
+  First commit
 dependencies: []
 path: ""
 defaultUsername: ""
