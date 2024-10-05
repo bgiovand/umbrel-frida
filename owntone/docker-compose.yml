@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: owntone-owntone_1
+      APP_PORT: 3000
+
+  owntone:
+    image: docker.io/owntone/owntone:latest
+    container_name: owntone
+    hostname: owntone
+    network_mode: host
+    environment:
+      - UID=1000
+      - GID=1000
+    volumes:
+      - ${APP_DATA_DIR}/owntone:/etc/owntone
+      - ${APP_DATA_DIR}/owntone/db:/var/cache/owntone/
+      - ${APP_DATA_DIR}/owntone/media:/srv/media
+      - /sys/fs/cgroup:/sys/fs/cgroup
+    ports:
+      - 3689:3689
+      - 3688:3688
+    restart: unless-stopped
